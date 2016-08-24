@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="MovieMiner" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="MovieMiner">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="SkipSee" value="Server=tcp:swvkahipx8.database.windows.net,1433;Database=SkipSee_db;User ID=mloflin@swvkahipx8;Password=skps@BsAk!114;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="mloflin" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEFkMLc1JXiiSTnOyvar2Ea8wDQYJKoZIhvcNAQEBBQAEggEApXkgkX91A9woEafW1U+qOczsXs4+xUr/6Ll64h06HBvngzkIQ+7dqTCKukmTIui+/ieHZypCD2uM0RymdGBBO/pDaMk2Uw+cFU3lTPofdo+MSTkehfdCX0+A+mEn0VEorQRHXPApwzJHCa8a3PatiErq8RfU8Hl8HNZtDcM0o4vmWICwfVJ1t27ML+I5Jgzz7VjEVAQzFesMViCXQ7fwy1aSx63lIXVX7yRPekXPD5JiotsyInbCgjK+BFn3loy/d1siVXVNrLoDoTzkmtzmzNaQYLgXk/B3hUgpwj2lmc9h+E3EMyTM8QwW4vYhVvxauUQl1IyVcMX9DilyuatbqzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECJWZiUzuqVdEgBDKveo1lnCeer8n1bNNWFGV" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2015-04-24T23:59:59.0000000-07:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="853A0FCBCFCCFDDB187C7AD5E1877029C0587B39" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
